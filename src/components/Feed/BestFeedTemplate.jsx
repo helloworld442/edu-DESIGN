@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import FeedCategory from "./FeedCategory";
 import BestFeedSection from "./BestFeedSection";
+import { device } from "../../utils/media";
 
 export default function BestFeedTemplate() {
   return (
@@ -18,4 +19,11 @@ const StBestFeedTemplate = styled.main`
   display: flex;
   align-items: flex-start;
   gap: 64px;
+
+  @media ${device.tablet} {
+    width: 100%;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+  }
 `;

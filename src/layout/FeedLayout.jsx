@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../utils/media";
 import Header from "../components/@common/Header";
 import Footer from "../components/@common/Footer";
 import { Outlet } from "react-router-dom";
@@ -24,4 +25,9 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${device.tablet} {
+    width: 100%;
+    padding: 0 10vw;
+  }
 `;

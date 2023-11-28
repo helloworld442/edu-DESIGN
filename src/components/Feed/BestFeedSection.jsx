@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import FeedSearch from "./FeedSearch";
 import FeedList from "./FeedList";
+import { device } from "../../utils/media";
 
 export default function BestFeedSection() {
   return (
@@ -17,6 +18,10 @@ export default function BestFeedSection() {
 
 const StBestFeedSection = styled.section`
   width: 700px;
+
+  @media ${device.tablet} {
+    width: 100%;
+  }
 `;
 
 const SectionTitle = styled.h3`

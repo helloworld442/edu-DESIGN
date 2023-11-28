@@ -1,5 +1,6 @@
 import { useLocation, useParams } from "react-router-dom";
 import styled from "styled-components";
+import { device } from "../../utils/media";
 
 export default function FeedCategory() {
   const { pathname } = useLocation();
@@ -22,14 +23,16 @@ export default function FeedCategory() {
         </a>
         <a>나의 활동</a>
       </FeedCategoryMenu>
-
-      <FeedCategoryButton>글 남기기</FeedCategoryButton>
     </StFeedCategory>
   );
 }
 
 const StFeedCategory = styled.div`
   width: 200px;
+
+  @media ${device.tablet} {
+    width: 100%;
+  }
 `;
 
 const FeedCategoryMenu = styled.ul`
@@ -37,6 +40,14 @@ const FeedCategoryMenu = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+
+  @media ${device.tablet} {
+    flex-direction: row;
+
+    a {
+      text-align: center;
+    }
+  }
 
   a {
     display: inline-block;
@@ -58,23 +69,4 @@ const FeedCategoryMenu = styled.ul`
     background: rgb(242, 246, 248);
     color: rgb(20, 22, 23);
   }
-`;
-
-const FeedCategoryButton = styled.button`
-  display: inline-block;
-  width: 100%;
-  height: 48px;
-  padding: 0px 16px;
-  margin: 24px 0;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 750;
-  line-height: 48px;
-  color: #fff;
-  background: #ffa500;
 `;

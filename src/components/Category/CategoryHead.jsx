@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../utils/media";
 
 export default function CategoryHead() {
   return (
@@ -32,5 +33,13 @@ const CategoryHeadTitle = styled.h1`
     font-weight: 550;
     font-family: "Noto Sans KR";
     color: #ffa500;
+  }
+
+  @media ${device.tablet} {
+    font-size: 1.8rem;
+
+    span {
+      font-size: 0.825rem;
+    }
   }
 `;

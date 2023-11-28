@@ -17,7 +17,8 @@ export default function Header() {
           >
             카테고리
           </a>
-          <a>소개하기</a>
+          <a>글 남기기</a>
+          <a>소개글</a>
           <a>문의하기</a>
         </HeaderMenu>
 

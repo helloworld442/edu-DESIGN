@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { device } from "../../utils/media";
 import CategoryItem from "./CategoryItem";
 
 const categorys = [
@@ -47,7 +48,7 @@ export default function CategoryList() {
   return (
     <CategoryListBox>
       {newCategorys.map((categorys, i) => (
-        <StCategoryList $under={i % 2 === 1}>
+        <StCategoryList>
           {categorys.map((category, j) => (
             <CategoryItem key={i + j} category={category} index={i + j} />
           ))}
@@ -63,6 +64,11 @@ const CategoryListBox = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 14px;
+
+  @media ${device.tablet} {
+    width: 600px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const StCategoryList = styled.ul`
@@ -70,9 +76,20 @@ const StCategoryList = styled.ul`
   flex-direction: column;
   gap: 14px;
 
-  ${(props) =>
-    props.$under &&
-    css`
-      margin-top: 108px;
-    `}
+  &:nth-child(2n) {
+    position: relative;
+    top: 108px;
+  }
+
+  @media ${device.tablet} {
+    &:nth-child(2n) {
+      position: relative;
+      top: 0;
+    }
+
+    &:nth-child(3n + 2) {
+      position: relative;
+      top: 108px;
+    }
+  }
 `;
