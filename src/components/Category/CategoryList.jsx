@@ -35,6 +35,11 @@ const categorys = [
     categoryName: "경제",
     categoryDesc: "요즘 대세 주식에 대한",
   },
+  {
+    categoryId: 9,
+    categoryName: "심리",
+    categoryDesc: "따듯한 마음씨를 가꿀 수 있는",
+  },
 ];
 
 export default function CategoryList() {

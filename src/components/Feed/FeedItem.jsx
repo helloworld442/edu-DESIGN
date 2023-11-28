@@ -39,6 +39,11 @@ const FeedItemTitle = styled.h3`
   font-weight: 650;
   font-size: 16px;
   color: rgb(20, 22, 23);
+
+  &:hover {
+    color: rgb(255, 165, 0, 0.8);
+    cursor: pointer;
+  }
 `;
 
 const FeedItemContent = styled.h5`
