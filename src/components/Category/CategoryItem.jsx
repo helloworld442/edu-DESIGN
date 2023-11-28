@@ -41,7 +41,7 @@ const CategoryItemDesc = styled.h4`
   margin-bottom: 6px;
   font-size: 0.75rem;
   font-weight: 550;
-  font-family: Pretendard;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #f8f8f8;
 `;
 

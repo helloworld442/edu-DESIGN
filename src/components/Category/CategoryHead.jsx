@@ -20,7 +20,7 @@ const StCategoryHead = styled.div`
 const CategoryHeadTitle = styled.h1`
   font-size: 2.15rem;
   font-weight: 550;
-  font-family: Pretendard;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   line-height: 3.5rem;
   display: flex;
@@ -30,7 +30,7 @@ const CategoryHeadTitle = styled.h1`
     height: 48px;
     font-size: 0.95rem;
     font-weight: 550;
-    font-family: Pretendard;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #ffa500;
   }
 `;
