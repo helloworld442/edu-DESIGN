@@ -45,7 +45,7 @@ const FeedCategoryMenu = styled.ul`
     padding: 0px 16px;
     box-sizing: border-box;
     border-radius: 8px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noto Sans KR";
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
@@ -70,7 +70,7 @@ const FeedCategoryButton = styled.button`
   border: none;
   border-radius: 8px;
   outline: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-size: 16px;
   font-weight: 750;

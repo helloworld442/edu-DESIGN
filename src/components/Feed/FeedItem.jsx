@@ -34,7 +34,7 @@ const StFeedItem = styled.li`
 
 const FeedItemTitle = styled.h3`
   margin-bottom: 6px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 650;
   font-size: 16px;
@@ -43,7 +43,7 @@ const FeedItemTitle = styled.h3`
 
 const FeedItemContent = styled.h5`
   width: 88%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 400;
   font-size: 0.825rem;
@@ -73,7 +73,7 @@ const FeedItemUser = styled.div`
   h4 {
     font-size: 0.75rem;
     font-weight: 500;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noto Sans KR";
   }
 
   h5 {
@@ -82,7 +82,7 @@ const FeedItemUser = styled.div`
     border-left: 1.5px solid rgb(157, 167, 174);
     font-size: 0.725rem;
     font-weight: 500;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noto Sans KR";
     color: rgb(157, 167, 174);
   }
 `;
@@ -98,7 +98,7 @@ const FeedItemInfo = styled.div`
   h6 {
     font-size: 0.725rem;
     font-weight: 500;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noto Sans KR";
     color: rgb(157, 167, 174);
   }
 

@@ -24,13 +24,13 @@ const SectionTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: bold;
   font-style: normal;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto Sans KR";
 `;
 
 const SectionDesc = styled.h4`
   font-size: 0.925rem;
   font-weight: 500;
   font-style: normal;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto Sans KR";
   color: #9da7ae;
 `;

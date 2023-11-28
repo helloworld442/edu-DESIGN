@@ -54,7 +54,7 @@ const HeaderMenu = styled.ul`
   gap: 36px;
   font-size: 0.825rem;
   font-weight: 550;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto Sans KR";
   color: #333;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
