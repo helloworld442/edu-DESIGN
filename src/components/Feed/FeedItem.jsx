@@ -33,7 +33,7 @@ const StFeedItem = styled.li`
 `;
 
 const FeedItemTitle = styled.h3`
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 650;
@@ -48,7 +48,7 @@ const FeedItemContent = styled.h5`
   font-weight: 400;
   font-size: 0.825rem;
   color: rgb(95, 102, 107);
-  line-height: 1.25rem;
+  line-height: 1.3rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
