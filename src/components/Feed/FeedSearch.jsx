@@ -34,7 +34,8 @@ const FeedSearchInput = styled.input`
   border: none;
   outline: none;
   font-size: 1.05rem;
-  font-weight: 350;
+  font-weight: 500;
+  font-family: "Noto Sans KR";
   color: #333;
 
   &::placeholder {
