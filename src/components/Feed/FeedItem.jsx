@@ -33,6 +33,7 @@ const StFeedItem = styled.li`
 `;
 
 const FeedItemTitle = styled.h3`
+  width: 100%;
   margin-bottom: 10px;
   font-family: "Noto Sans KR";
   font-style: normal;
