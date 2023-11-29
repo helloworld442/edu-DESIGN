@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { ReactComponent as SearchIcon } from "../../assets/magnifying-glass-solid.svg";
 
-export default function FeedSearch() {
+export default function PostSearch() {
   return (
-    <FeedSearchForm>
-      <FeedSearchButton />
-      <FeedSearchInput placeholder="제목을 입력해주세요" />
-    </FeedSearchForm>
+    <PostSearchForm>
+      <PostSearchButton />
+      <PostSearchInput placeholder="제목을 입력해주세요" />
+    </PostSearchForm>
   );
 }
 
-const FeedSearchForm = styled.form`
+const PostSearchForm = styled.form`
   width: 100%;
   height: 64px;
   padding: 0 18px;
@@ -23,13 +23,13 @@ const FeedSearchForm = styled.form`
   box-shadow: 0px 4px 10px 0px rgba(58, 62, 65, 0.1);
 `;
 
-const FeedSearchButton = styled(SearchIcon)`
+const PostSearchButton = styled(SearchIcon)`
   width: 1.15rem;
   height: 1.15rem;
   fill: #ffa500;
 `;
 
-const FeedSearchInput = styled.input`
+const PostSearchInput = styled.input`
   width: 650px;
   border: none;
   outline: none;

@@ -2,13 +2,13 @@ import { useLocation, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { device } from "../../utils/media";
 
-export default function FeedCategory() {
+export default function PostCategory() {
   const { pathname } = useLocation();
   const { categoryId } = useParams();
 
   return (
-    <StFeedCategory>
-      <FeedCategoryMenu>
+    <StPostCategory>
+      <PostCategoryMenu>
         <a
           href={"/feed/best/" + categoryId}
           className={pathname.includes("best") ? "active" : null}
@@ -22,12 +22,12 @@ export default function FeedCategory() {
           최신 글
         </a>
         <a>나의 활동</a>
-      </FeedCategoryMenu>
-    </StFeedCategory>
+      </PostCategoryMenu>
+    </StPostCategory>
   );
 }
 
-const StFeedCategory = styled.div`
+const StPostCategory = styled.div`
   width: 200px;
 
   @media ${device.tablet} {
@@ -35,7 +35,7 @@ const StFeedCategory = styled.div`
   }
 `;
 
-const FeedCategoryMenu = styled.ul`
+const PostCategoryMenu = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

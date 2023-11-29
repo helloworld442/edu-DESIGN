@@ -1,18 +1,18 @@
 import styled from "styled-components";
-import FeedCategory from "./FeedCategory";
-import BestFeedSection from "./BestFeedSection";
+import FeedCategory from "./PostCategory";
 import { device } from "../../utils/media";
+import NewPostSection from "./NewPostSection";
 
-export default function BestFeedTemplate() {
+export default function NewPostTemplate() {
   return (
-    <StBestFeedTemplate>
+    <StNewPostTemplate>
       <FeedCategory />
-      <BestFeedSection />
-    </StBestFeedTemplate>
+      <NewPostSection />
+    </StNewPostTemplate>
   );
 }
 
-const StBestFeedTemplate = styled.main`
+const StNewPostTemplate = styled.main`
   width: 950px;
   margin-top: 36px;
   display: flex;

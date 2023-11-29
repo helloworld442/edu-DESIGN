@@ -1,28 +1,28 @@
 import styled from "styled-components";
 
-export default function FeedItem({ feed }) {
+export default function PostItem({ feed }) {
   return (
-    <StFeedItem>
-      <FeedItemTitle>{feed.title}</FeedItemTitle>
-      <FeedItemContent>{feed.question}</FeedItemContent>
-      <FeedItemUser>
+    <StPostItem>
+      <PostItemTitle>{feed.title}</PostItemTitle>
+      <PostItemContent>{feed.question}</PostItemContent>
+      <PostItemUser>
         <span></span>
         <h4>김민승</h4>
         <h5>2023.08.12</h5>
-      </FeedItemUser>
-      <FeedItemInfo>
+      </PostItemUser>
+      <PostItemInfo>
         <h6>
           추천 <span>1</span>
         </h6>
         <h6>
           조회 <span>2</span>
         </h6>
-      </FeedItemInfo>
-    </StFeedItem>
+      </PostItemInfo>
+    </StPostItem>
   );
 }
 
-const StFeedItem = styled.li`
+const StPostItem = styled.li`
   position: relative;
   width: 100%;
   height: 210px;
@@ -32,7 +32,7 @@ const StFeedItem = styled.li`
   margin: 24px 0;
 `;
 
-const FeedItemTitle = styled.h3`
+const PostItemTitle = styled.h3`
   width: 100%;
   margin-bottom: 10px;
   font-family: "Noto Sans KR";
@@ -47,7 +47,7 @@ const FeedItemTitle = styled.h3`
   }
 `;
 
-const FeedItemContent = styled.h5`
+const PostItemContent = styled.h5`
   width: 88%;
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -61,7 +61,7 @@ const FeedItemContent = styled.h5`
   overflow: hidden;
 `;
 
-const FeedItemUser = styled.div`
+const PostItemUser = styled.div`
   position: absolute;
   bottom: 30px;
   display: flex;
@@ -93,7 +93,7 @@ const FeedItemUser = styled.div`
   }
 `;
 
-const FeedItemInfo = styled.div`
+const PostItemInfo = styled.div`
   position: absolute;
   bottom: 36px;
   right: 0;

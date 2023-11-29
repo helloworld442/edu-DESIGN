@@ -1,8 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import CategoryPage from "../pages/CategoryPage";
-import FeedLayout from "../layout/FeedLayout";
-import BestFeedPage from "../pages/BestFeedPage";
-import NewFeedPage from "../pages/NewFeedPage";
+import BestPostPage from "../pages/BestPostPage";
+import NewPostPage from "../pages/NewPostPage";
+import PostLayout from "../layout/PostLayout";
+import WritePage from "../pages/WritePage";
 
 const router = createBrowserRouter([
   {
@@ -11,18 +12,22 @@ const router = createBrowserRouter([
   },
   {
     path: "/feed/",
-    element: <FeedLayout />,
+    element: <PostLayout />,
     children: [
       {
         path: "best/:categoryId",
-        element: <BestFeedPage />,
+        element: <BestPostPage />,
       },
 
       {
         path: "new/:categoryId",
-        element: <NewFeedPage />,
+        element: <NewPostPage />,
       },
     ],
+  },
+  {
+    path: "/write",
+    element: <WritePage />,
   },
 ]);
 

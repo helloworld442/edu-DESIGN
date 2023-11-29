@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const { pathname } = useLocation();
+  const path = usePathname(pathname);
 
   return (
     <StHeader>
@@ -17,7 +18,9 @@ export default function Header() {
           >
             카테고리
           </a>
-          <a>글 남기기</a>
+          <a href="/write" className={pathname === "/write" ? "active" : null}>
+            글 남기기
+          </a>
           <a>소개글</a>
           <a>문의하기</a>
         </HeaderMenu>
@@ -26,21 +29,45 @@ export default function Header() {
           <User />
         </HeaderIcon>
       </HeaderNav>
+
+      <HeaderPath>{path}</HeaderPath>
     </StHeader>
   );
 }
 
+function usePathname(pathname) {
+  if (pathname.includes("category")) {
+    return "홈  >  카테고리";
+  }
+
+  if (pathname.includes("feed")) {
+    return "홈  >  카테고리  >  커뮤니티";
+  }
+
+  if (pathname.includes("write")) {
+    return "홈  >  글 남기기";
+  }
+}
+
 const StHeader = styled.header`
   width: 100%;
-  height: 80px;
+  height: auto;
 `;
 
 const HeaderNav = styled.nav`
   width: 100%;
-  height: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const HeaderPath = styled.pre`
+  font-size: 0.725rem;
+  font-weight: 400;
+  font-family: "Noto Sans KR";
+  color: rgb(179, 173, 178);
+  text-align: right;
 `;
 
 const HeaderLogo = styled.a`

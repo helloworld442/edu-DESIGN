@@ -1,22 +1,22 @@
 import styled from "styled-components";
-import FeedSearch from "./FeedSearch";
-import FeedList from "./FeedList";
 import { device } from "../../utils/media";
+import PostSearch from "./PostSearch";
+import PostList from "./PostList";
 
-export default function NewFeedSection() {
+export default function NewPostSection() {
   return (
-    <StNewFeedSection>
+    <StNewPostSection>
       <SectionTitle>최신 글</SectionTitle>
       <SectionDesc>가장 뉴 트랜드에 대한 이야기들</SectionDesc>
 
-      <FeedSearch />
+      <PostSearch />
 
-      <FeedList />
-    </StNewFeedSection>
+      <PostList />
+    </StNewPostSection>
   );
 }
 
-const StNewFeedSection = styled.section`
+const StNewPostSection = styled.section`
   width: 700px;
 
   @media ${device.tablet} {
@@ -26,8 +26,8 @@ const StNewFeedSection = styled.section`
 
 const SectionTitle = styled.h3`
   margin-bottom: 12px;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.45rem;
+  font-weight: 550;
   font-style: normal;
   font-family: "Noto Sans KR";
 `;
