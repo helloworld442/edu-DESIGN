@@ -14,7 +14,6 @@ export default function BestFeedTemplate() {
 
 const StBestFeedTemplate = styled.main`
   width: 950px;
-  height: 500px;
   margin-top: 36px;
   display: flex;
   align-items: flex-start;

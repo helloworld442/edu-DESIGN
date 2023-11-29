@@ -64,7 +64,7 @@ export default function CategoryList() {
 }
 
 const CategoryListBox = styled.div`
-  width: 850px;
+  width: 900px;
   margin: 72px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

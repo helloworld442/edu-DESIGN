@@ -18,7 +18,7 @@ export default function CategoryItem({ category, index }) {
 
 const StCategoryItem = styled.li`
   width: 100%;
-  height: 220px;
+  height: 230px;
   padding: 36px 24px;
   box-sizing: border-box;
   background: ${(props) => (props.$bgColor ? "#FFBB3F" : "#ffa500")};
@@ -43,6 +43,7 @@ const CategoryItemDesc = styled.h4`
   font-weight: 550;
   font-family: "Noto Sans KR";
   color: #f8f8f8;
+  line-height: 1rem;
 `;
 
 const CategoryItemTitle = styled.h3`
