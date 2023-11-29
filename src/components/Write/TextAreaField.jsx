@@ -51,6 +51,7 @@ const TextAreaFieldTextArea = styled.textarea`
   font-family: "Noto Sans KR";
   color: #333;
   line-height: 60px;
+  resize: none;
 
   &::placeholder {
     color: rgb(157, 167, 174);
