@@ -177,6 +177,7 @@ const HeaderMobilMenu = styled.ul`
   right: 0;
   width: 0;
   height: 100%;
+  display: none;
 
   ${(props) =>
     props.active &&
