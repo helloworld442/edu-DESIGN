@@ -17,6 +17,10 @@ export default function WriteHead() {
 const StWriteHead = styled.div`
   margin-top: 12px;
   margin-bottom: 36px;
+
+  @media ${device.mobile} {
+    margin: 12px 0;
+  }
 `;
 
 const WriteHeadTitle = styled.h1`
@@ -39,6 +43,15 @@ const WriteHeadTitle = styled.h1`
 
   @media ${device.tablet} {
     font-size: 1.5rem;
+
+    span {
+      font-size: 0.825rem;
+    }
+  }
+
+  @media ${device.mobile} {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
 
     span {
       font-size: 0.825rem;

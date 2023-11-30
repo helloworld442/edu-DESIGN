@@ -74,6 +74,12 @@ const CategoryListBox = styled.div`
     width: 600px;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media ${device.mobile} {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 36px 0;
+  }
 `;
 
 const StCategoryList = styled.ul`
@@ -95,6 +101,13 @@ const StCategoryList = styled.ul`
     &:nth-child(3n + 2) {
       position: relative;
       top: 108px;
+    }
+  }
+
+  @media ${device.mobile} {
+    &:nth-child(2n) {
+      position: relative;
+      top: 0;
     }
   }
 `;

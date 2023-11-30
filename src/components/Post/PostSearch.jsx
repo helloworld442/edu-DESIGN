@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as SearchIcon } from "../../assets/magnifying-glass-solid.svg";
+import { device } from "../../utils/media";
 
 export default function PostSearch() {
   return (
@@ -15,6 +16,7 @@ const PostSearchForm = styled.form`
   height: 64px;
   padding: 0 18px;
   margin: 36px 0;
+  box-sizing: border-box;
   border-radius: 8px;
   border: 1px solid #d7e0e6;
   display: flex;

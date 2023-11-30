@@ -21,6 +21,9 @@ const StWriteTemplate = styled.main`
 
   @media ${device.tablet} {
     width: 100%;
-    padding: 0 10vw;
+  }
+
+  @media ${device.mobile} {
+    width: 100%;
   }
 `;

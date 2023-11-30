@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FeedItem from "./PostItem";
+import PostItem from "./PostItem";
 
 const feeds = [
   {
@@ -35,7 +35,7 @@ export default function PostList() {
   return (
     <StPostList>
       {feeds.map((feed) => (
-        <FeedItem key={feed.id} feed={feed} />
+        <PostItem key={feed.id} feed={feed} />
       ))}
     </StPostList>
   );

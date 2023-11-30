@@ -16,6 +16,10 @@ export default function CategoryHead() {
 const StCategoryHead = styled.div`
   margin: 36px 0;
   text-align: center;
+
+  @media ${device.mobile} {
+    margin: 0;
+  }
 `;
 
 const CategoryHeadTitle = styled.h1`
@@ -39,6 +43,17 @@ const CategoryHeadTitle = styled.h1`
     font-size: 1.8rem;
 
     span {
+      font-size: 0.825rem;
+    }
+  }
+
+  @media ${device.mobile} {
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+
+    span {
+      height: 36px;
       font-size: 0.825rem;
     }
   }

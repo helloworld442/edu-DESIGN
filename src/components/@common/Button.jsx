@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { device } from "../../utils/media";
 
 export default function Button({ size, text, $primary }) {
   return (
@@ -25,6 +26,10 @@ const StButton = styled.button`
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media ${device.table} {
+        width: 100%;
+      }
     `}
 
   ${(props) =>

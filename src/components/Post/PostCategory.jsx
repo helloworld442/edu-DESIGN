@@ -33,6 +33,10 @@ const StPostCategory = styled.div`
   @media ${device.tablet} {
     width: 100%;
   }
+
+  @media ${device.mobile} {
+    width: 100%;
+  }
 `;
 
 const PostCategoryMenu = styled.ul`
@@ -42,6 +46,29 @@ const PostCategoryMenu = styled.ul`
   gap: 8px;
 
   @media ${device.tablet} {
+    flex-direction: row;
+
+    a {
+      text-align: center;
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    color: rgb(157, 167, 174);
+  }
+
+  @media ${device.mobile} {
     flex-direction: row;
 
     a {

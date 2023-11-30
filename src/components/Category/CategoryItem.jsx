@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device } from "../../utils/media";
 
 export default function CategoryItem({ category, index }) {
   const { categoryId, categoryName, categoryDesc } = category;
-
-  console.log(categoryId);
 
   return (
     <StCategoryItem $bgColor={index % 2 === 0}>
@@ -34,6 +33,10 @@ const StCategoryItem = styled.li`
     display: inline-block;
     width: 100%;
     height: 100%;
+  }
+
+  @media ${device.mobile} {
+    height: 150px;
   }
 `;
 

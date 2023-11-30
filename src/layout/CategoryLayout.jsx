@@ -25,5 +25,12 @@ const Layout = styled.div`
   @media ${device.tablet} {
     width: 100%;
     padding: 0 10vw;
+    box-sizing: border-box;
+  }
+
+  @media ${device.mobile} {
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
   }
 `;

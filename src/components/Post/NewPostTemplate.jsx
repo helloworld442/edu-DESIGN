@@ -21,7 +21,12 @@ const StNewPostTemplate = styled.main`
 
   @media ${device.tablet} {
     width: 100%;
-    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media ${device.mobile} {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }

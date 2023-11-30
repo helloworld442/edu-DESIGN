@@ -22,6 +22,10 @@ const StNewPostSection = styled.section`
   @media ${device.tablet} {
     width: 100%;
   }
+
+  @media ${device.mobile} {
+    width: 100%;
+  }
 `;
 
 const SectionTitle = styled.h3`
