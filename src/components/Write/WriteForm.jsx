@@ -33,7 +33,7 @@ const WriteFormButtons = styled.div`
   padding: 48px 0;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 18px;
 `;
