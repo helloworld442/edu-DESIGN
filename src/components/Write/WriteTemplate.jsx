@@ -20,6 +20,7 @@ const StWriteTemplate = styled.main`
   align-items: flex-start;
 
   @media ${device.tablet} {
-    width: 600px;
+    width: 100%;
+    padding: 0 10vw;
   }
 `;
