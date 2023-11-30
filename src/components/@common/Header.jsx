@@ -139,6 +139,7 @@ const HeaderIcon = styled.span`
 const HeaderMobileIcon = styled(Bars)`
   width: 1.4rem;
   height: 1.4rem;
+  margin-bottom: 6px;
   fill: #333;
   display: none;
   @media ${device.mobile} {
