@@ -27,7 +27,7 @@ const StButton = styled.button`
       justify-content: center;
       align-items: center;
 
-      @media ${device.table} {
+      @media ${device.mobile} {
         width: 100%;
       }
     `}
