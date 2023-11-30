@@ -29,6 +29,11 @@ const PostSearchButton = styled(SearchIcon)`
   width: 1.15rem;
   height: 1.15rem;
   fill: #ffa500;
+
+  @media ${device.mobile} {
+    width: 48px;
+    height: 48px;
+  }
 `;
 
 const PostSearchInput = styled.input`
