@@ -26,6 +26,7 @@ const StButton = styled.button`
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       @media ${device.mobile} {
         width: 100%;
